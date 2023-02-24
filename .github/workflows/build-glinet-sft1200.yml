@@ -78,7 +78,7 @@ jobs:
         git config --global user.email "github-actions[bot]@github.com"
         python3 setup.py -c configs/config-siflower-18.x.yml
         cd /workdir/gl-infra-builder/openwrt-18.06/siflower/openwrt-18.06
-        ./scripts/gen_config.py glinet-sft1200 glinet_depends
+        ./scripts/gen_config.py glinet_sft1200 glinet_depends
           git clone https://github.com/gl-inet/glinet4.x.git -b main /workdir/glinet
         ./scripts/feeds update -a
         ./scripts/feeds install -a
